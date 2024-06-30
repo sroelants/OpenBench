@@ -1,12 +1,7 @@
 {
     "private" : false,
-<<<<<<< HEAD:Engines/Viridithas.json
-    "nps"     : 865000,
-    "source"  : "https://github.com/cosmobobak/viridithas",
-=======
     "nps"     : 2612570,
     "source"  : "https://github.com/sroelants/simbelmyne",
->>>>>>> 50424f4 (Tweak configs):Engines/Simbelmyne.json
 
     "build" : {
         "path"      : "",
