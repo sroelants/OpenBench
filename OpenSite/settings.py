@@ -23,6 +23,7 @@ SECRET_KEY = '@!zw2l8til1(0eb_nk+1w!(n78gqm&u)s)_v7#k6iseia@g9q0'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = ['https://chess.samroelants.com']
 
 HTML_MINIFY   = True
 APPEND_SLASH  = True
