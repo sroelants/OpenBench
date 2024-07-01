@@ -1,8 +1,15 @@
 
-a:link, a:visited, a:hover, a:active {
+a:link, a:visited, a:active {
     text-decoration: none;
     color: var(--color-font1);
+    transition: color 0.1s ease-in-out;
 }
+
+a:hover {
+    text-decoration: none;
+    color: #2dd4bf;
+}
+
 
 body {
     --color1: #0f172a;
@@ -263,8 +270,8 @@ body, html, main{
     line-height: 92%;
     background-color: var(--color-white);
     font-family: "Courier New";
-    border-radius: 4px;
-    padding: 7px 10px 4px;
+    border-radius: 2px;
+    padding: 15px 10px 15px;
 }
 
 #content .statblock-green {
