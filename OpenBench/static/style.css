@@ -153,14 +153,6 @@ body, html, main{
 
 /* Table Headers in General */
 
-#content .table-header th:first-child {
-    border-top-left-radius: 12px;
-}
-
-#content .table-header th:last-child {
-    border-top-right-radius: 12px;
-}
-
 #content .table-header th {
     color: var(--color-font3);
     font-weight: 400;
@@ -220,11 +212,11 @@ body, html, main{
     border-radius: 4px;
     padding: 8px 0px 6px;
     border-color: transparent;
-    color: var(--color-font1);
+    color: var(--color-font3);
     display: inline-block;
     text-align: center;
     transition: background-color 0.2s ease;
-    font-family: "Courier Prime", serif;
+    font-family: "Verdana", sans;
     font-size: 13px;
     cursor: pointer;
 }
@@ -326,7 +318,7 @@ body, html, main{
 /* Long StatBlock which we can copy */
 
 #content .long-statblock {
-    background-color: var(--color3);
+    background-color: var(--color2);
     color: var(--color-font2);
     border-radius: 4px;
     padding: 0.50rem 0.75rem;
@@ -352,7 +344,7 @@ body, html, main{
 }
 
 #content .test-config .td-label {
-    color: var(--color-font1);
+    color: var(--color-font3);
 }
 
 /* ??? */
