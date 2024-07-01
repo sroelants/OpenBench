@@ -39,7 +39,7 @@ body, html, main{
 }
 
 #sidebar {
-    padding: 60px 16px 16px 16px;
+    padding: 16px 16px 16px 16px;
     flex-basis: calc(min(300px, max(200px, 10%)));
 }
 
@@ -86,7 +86,7 @@ body, html, main{
     padding: 4px 16px 2px;
     font-size: 1.0rem;
     border-radius: 4px;
-    transition: background-color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
 }
 
 #sidebar li a {
@@ -95,8 +95,8 @@ body, html, main{
     width: 100%;
 }
 
-#sidebar li:hover {
-    background-color: var(--color-bg-highlight);
+#sidebar li:hover a {
+    color: var(--color-font1);
 }
 
 #sidebar .header {
@@ -107,34 +107,6 @@ body, html, main{
 
 #sidebar hr {
     border: 1px var(--color2) solid;
-}
-
-/* Table Striping, with overriding for the Table Header */
-
-#content .stripes tr:nth-child(odd):not(.table-header) {
-    background-color: var(--color1);
-}
-
-#content .stripes tr:nth-child(even):not(.table-header) {
-    background-color: var(--color2);
-}
-
-#content .stripes th {
-    background-color: var(--color-black);
-}
-
-/* Tables that have hoverable table rows */
-
-#content .hoverable tr:nth-child(odd):hover:not(.table-header) {
-    background-color: var(--color-bg-highlight);
-}
-
-#content .hoverable tr:nth-child(even):hover:not(.table-header) {
-    background-color: var(--color-bg-highlight);
-}
-
-#content .hoverable tr:hover{
-    background-color: var(--color1);
 }
 
 /* Tables that are too long can wrap words */
