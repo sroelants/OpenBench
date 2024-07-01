@@ -1,17 +1,28 @@
 
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
-    color: #8BBAD6;
+    color: var(--color-font1);
 }
 
 body {
-    --color1: #222222;
-    --color2: #2D2D2D;
-    --color3: #3B3B3B;
+    --color1: #0f172a;
+    --color2: #1e293b;
+    --color3: #475569;
 
-    --color-font1: #DBDEE1;
-    --color-font2: #949BA4;
-    --color-font3: #008F11;
+    --color-font1: #0d9488;
+    --color-font2: #64748b;
+    --color-font3: #cbd5e1;
+
+    --color-dark: #1e293b;
+    --color-bg-highlight: #334155;
+
+    --color-black: #020617;
+    --color-white: #e2e8f0;
+    --color-green: #10b981;
+    --color-blue:  #22d3ee;
+    --color-yellow:#d9f99d;
+    --color-red:   #fb7185;
+
 
     background-color: var(--color1);
 
@@ -74,7 +85,7 @@ body, html, main{
 }
 
 #sidebar li:hover {
-    background-color: #303030;
+    background-color: var(--color-bg-highlight);
 }
 
 #sidebar .header {
@@ -98,17 +109,17 @@ body, html, main{
 }
 
 #content .stripes th {
-    background-color: black;
+    background-color: var(--color-black);
 }
 
 /* Tables that have hoverable table rows */
 
 #content .hoverable tr:nth-child(odd):hover:not(.table-header) {
-    background-color: #323232;
+    background-color: var(--color-bg-highlight);
 }
 
 #content .hoverable tr:nth-child(even):hover:not(.table-header) {
-    background-color: #323232;
+    background-color: var(--color-bg-highlight);
 }
 
 #content .hoverable tr:hover{
@@ -142,13 +153,13 @@ body, html, main{
 #content .table-header th {
     color: var(--color-font3);
     font-weight: 400;
-    background-color: #171717;
+    background-color: var(--color1);
 }
 
 #content .table-small-header th {
     color: var(--color-font3);
     font-size: small;
-    background-color: #171717;
+    background-color: var(--color1);
 }
 
 /* Table Spacer for chaining Tables as a hack */
@@ -159,7 +170,7 @@ body, html, main{
 }
 
 #content .table-spacer-small th, #content .table-spacer-small tr {
-    background-color: #171717;
+    background-color: var(--color-dark);
     height: 0.4rem;
     padding: 0px;
 }
@@ -173,7 +184,7 @@ body, html, main{
 
 #content td {
     color: var(--color-font2);
-    border-bottom: 1px #444444 solid;
+    border-bottom: 1px var(--color-dark) solid;
 }
 
 #content th, #content td {
@@ -201,7 +212,7 @@ body, html, main{
     color: var(--color-font1);
     display: inline-block;
     text-align: center;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.2s ease;
     font-family: "Courier Prime", serif;
     font-size: 13px;
     cursor: pointer;
@@ -273,32 +284,32 @@ body, html, main{
 
 #content .statblock {
     font-size: 13px;
-    color: black;
+    color: var(--color-black);
     line-height: 92%;
-    background-color: #CCCCCC;
+    background-color: var(--color-white);
     font-family: "Courier New";
     border-radius: 4px;
     padding: 7px 10px 4px;
 }
 
 #content .statblock-green {
-    background-color: #76D576;
+    background-color: var(--color-green);
 }
 
 #content .statblock-blue {
-    background-color: #60F0FF;
+    background-color: var(--color-blue);
 }
 
 #content .statblock-yellow {
-    background-color: #EFF891;
+    background-color: var(--color-yellow);
 }
 
 #content .statblock-red {
-    background-color: #FA9696;
+    background-color: var(--color-red);
 }
 
 #content .redlink {
-    color: #FF4D4D;
+    color: var(--color-red);
 }
 
 /* Long StatBlock which we can copy */
@@ -341,15 +352,15 @@ td pre {
 }
 
 #content .error-message {
-    color: red;
+    color: var(--color-red);
 }
 
 #content .warning-message {
-    color: yellow;
+    color: var(--color-yellow);
 }
 
 #content .status-message {
-    color: green;
+    color: var(--color-green);
 }
 
 #content .site-title {
@@ -394,7 +405,7 @@ td pre {
         width: 100%;
         background-color: var(--color1);
         overflow-y: auto;
-        transition: transform cubic-bezier(0.82, 0.08, 0.1, 0.93) 0.3s;
+        transition: transform cubic-bezier(0.82, 0.08, 0.1, 0.93) 0.2s;
         transform: translateX(-100%);
     }
 
