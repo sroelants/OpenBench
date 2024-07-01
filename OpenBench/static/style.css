@@ -23,7 +23,6 @@ body {
     --color-yellow:#d9f99d;
     --color-red:   #fb7185;
 
-
     background-color: var(--color1);
 
     font-size: 16px;
@@ -42,6 +41,18 @@ body, html, main{
 #sidebar {
     padding: 60px 16px 16px 16px;
     flex-basis: calc(min(300px, max(200px, 10%)));
+}
+
+#simbelmyne-logo {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#simbelmyne-logo img {
+    width: 50%;
 }
 
 #sidebar-toggle {
