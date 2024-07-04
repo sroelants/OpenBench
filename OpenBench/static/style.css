@@ -25,10 +25,22 @@ body {
 
     --color-black: #020617;
     --color-white: #e2e8f0;
+
     --color-green: #10b981;
+    --color-lgreen: #6ee7b7;
+    --color-dgreen: #064e3b;
+
     --color-blue:  #22d3ee;
-    --color-yellow:#d9f99d;
+    --color-lblue:  #a5f3fc;
+    --color-dblue:  #164e63;
+
+    --color-yellow:##fef08a;
+    --color-lyellow:#fef9c3;
+    --color-dyellow:#854d0e;
+
     --color-red:   #fb7185;
+    --color-lred:   #fecdd3;
+    --color-dred:   #881337;
 
     background-color: var(--color1);
 
@@ -161,12 +173,12 @@ body, html, main{
 
 #content table {
     line-height: 96%;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0 10px;
 }
 
 #content td {
     color: var(--color-font2);
-    border-bottom: 1px var(--color-dark) solid;
 }
 
 #content th, #content td {
@@ -266,28 +278,35 @@ body, html, main{
 
 #content .statblock {
     font-size: 13px;
-    color: var(--color-black);
-    line-height: 92%;
-    background-color: var(--color-white);
+    color: var(--color-font2);
+    background-color: var(--color2);
     font-family: "Courier New";
-    border-radius: 2px;
-    padding: 15px 10px 15px;
+    border-radius: 4px;
+    border: solid 1px;
 }
 
 #content .statblock-green {
     background-color: var(--color-green);
+    border: 1px solid var(--color-lgreen);
+    color: var(--color-dgreen);
 }
 
 #content .statblock-blue {
     background-color: var(--color-blue);
+    border: 1px solid var(--color-lblue);
+    color: var(--color-dblue);
 }
 
 #content .statblock-yellow {
     background-color: var(--color-yellow);
+    border: 1px solid var(--color-dyellow);
+    color: var(--color-dyellow);
 }
 
 #content .statblock-red {
     background-color: var(--color-red);
+    border: 1px solid var(--color-dred);
+    color: var(--color-black);
 }
 
 #content .redlink {
