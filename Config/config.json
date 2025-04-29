@@ -23,6 +23,7 @@
     ],
 
     "engines" : [
-        "Simbelmyne"
+        "Simbelmyne",
+        "Telemachus"
     ]
 }
